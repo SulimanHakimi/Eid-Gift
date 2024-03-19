@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Timer from "./timer";
 
 function Main() {
   return (
-    <div>Main</div>
-  )
+    <div className="flex h-screen">
+      <Timer />
+    </div>
+  );
 }
 
-export default Main
+export default Main;
