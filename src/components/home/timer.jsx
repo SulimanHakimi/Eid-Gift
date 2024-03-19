@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Timer() {
   // April 10, 2024 00:00:00
-  let countDownDate = new Date("March 19, 2024 12:23:00").getTime();
+  let countDownDate = new Date("April 10, 2024 00:00:00").getTime();
   const [isTimeFinished, setIsTimeFinished] = useState(false);
 
   const [day, setDay] = useState("00");
