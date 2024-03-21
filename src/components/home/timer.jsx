@@ -29,21 +29,33 @@ function Timer() {
   return (
     <div className="flex bg-footer-texture w-full bg-center bg-cover h-screen justify-end items-end">
       <div className="w-2/3 select-none h-96 flex flex-col text-center justify-evenly items-center">
-        <div className="flex gap-1 text-4xl font-mono	text-slate-700">
-          <p className="rounded-full flex justify-center items-center border-2 w-20 h-20  border-[#6CBBB1]">
-            <span>{day}</span>
-          </p>
-          <p className="rounded-full flex justify-center items-center border-[#6CBBB1] border-2 w-20 h-20 ">
-            <span>{hours}</span>
-          </p>
-          <p className="rounded-full flex justify-center items-center border-[#6CBBB1] border-2  w-20 h-20">
-            <span>{minutes}</span>
-          </p>
-          <p className="rounded-full flex justify-center items-center border-2 border-[#6CBBB1] w-20 h-20">
-            <span>{seconds}</span>
-          </p>
+        <div className="flex gap-10 flex-row-reverse text-4xl font-mono	text-slate-700">
+          <div className="flex flex-col">
+            <p className="rounded-full flex justify-center items-center border-2 w-20 h-20  border-[#6CBBB1]">
+              <span>{day}</span>
+            </p>
+            <span className="text-2xl">روز</span>
+          </div>
+          <div className="flex flex-col">
+            <p className="rounded-full flex justify-center items-center border-[#6CBBB1] border-2 w-20 h-20 ">
+              <span>{hours}</span>
+            </p>
+            <span className="text-2xl">ساعت</span>
+          </div>
+          <div className="flex flex-col">
+            <p className="rounded-full flex justify-center items-center border-[#6CBBB1] border-2  w-20 h-20">
+              <span>{minutes}</span>
+            </p>
+            <span className="text-2xl">دقیقه</span>
+          </div>
+          <div className="flex flex-col">
+            <p className="rounded-full flex justify-center items-center border-2 border-[#6CBBB1] w-20 h-20">
+              <span>{seconds}</span>
+            </p>
+            <span className="text-2xl">ثانیه</span>
+          </div>
         </div>
-        <p className="text-4xl">شمارش معکوس تا عید فطر</p>
+        <p className="text-5xl">شمارش معکوس تا عید فطر</p>
       </div>
     </div>
   );
